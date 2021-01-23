@@ -1,0 +1,27 @@
+.page-main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+
+    &__title {
+        @include reset;
+        margin-bottom: 100px;
+        max-width: 60vw;
+
+        font-size: 26px;
+        line-height: 42px;
+        font-weight: normal;
+    }
+}
+
+@media (min-width: $desktop-width) { 
+    .page-main {
+
+        &__title {
+            margin-bottom: 120px;
+    
+            font-size: 36px;
+            line-height: 56px;
+        }
+    }
+}

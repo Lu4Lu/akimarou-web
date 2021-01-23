@@ -1,0 +1,25 @@
+.footer {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $dark-title;
+    font-size: 18px;
+    line-height: 40px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    // padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__copy {
+        @include reset;
+    }
+}
+
+@media (min-width: $desktop-1600-width-container) {
+    .footer {
+        max-width: 1600px;
+    }
+}
