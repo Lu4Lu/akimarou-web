@@ -3,8 +3,19 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const fileinclude = require('gulp-file-include');
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('source/html'));
+});
 
 // Styles
 
