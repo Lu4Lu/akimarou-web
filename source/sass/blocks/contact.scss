@@ -1,5 +1,5 @@
 .contact {
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 60px;
 
     &__wrapper {
@@ -11,8 +11,9 @@
 
     &__title {
         @include reset;
-        font-size: 32px;
-        margin-bottom: 40px;
+        font-size: 18px;
+        margin-bottom: 28px;
+        font-weight: 400;
     }
 
     &__item {

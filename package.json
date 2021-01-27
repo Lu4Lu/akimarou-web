@@ -1,12 +1,12 @@
 {
-  "name": "sedona-21",
+  "name": "Akimarou",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Akimarou web portfolio",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
