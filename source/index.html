@@ -16,6 +16,7 @@
       </a>
       <nav class="header__site-navigation site-navigation">
         <ul class="site-navigation__list">
+          <button href="#" class="site-navigation__toggle" data-behavior="navToggle">Menu</Button>
           <li class="site-navigation__item">
             <a class="site-navigation__link site-navigation__link--current">Works</a>
           </li>
@@ -25,10 +26,27 @@
           <li class="site-navigation__item">
             <a class="site-navigation__link site-navigation__link--contact" href="contact.html">Contact</a>
           </li>
-          <a href="#" class="site-navigation__toggle" data-behavior="navToggle">Menu</a>
         </ul>
       </nav>
-      </header>
+      <div class="header__overlay-menu">
+        <nav class="overlay-menu__overlay-nav overlay-nav">
+          <ul class="overlay-nav__list">
+            <button href="#" class="overlay-nav__toggle" data-behavior="navToggle">Menu</Button>
+            <li class="overlay-nav__item">
+              <a class="overlay-nav__link">Works</a>
+            </li>
+            <li class="overlay-nav__item">
+              <a class="overlay-nav__link" href="about.html">About</a>
+            </li>
+            <li class="overlay-nav__item">
+              <a class="overlay-nav__link site-navigation__link--contact" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
 
       <main class="page-main">
         <div class="page-main__container container">

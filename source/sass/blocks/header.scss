@@ -24,10 +24,29 @@
     &__logo {
         @include reset;
         @include reset-link;
+        font-weight: 800;
 
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0%; 
+    }
+
+    &__modal {
+
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        overflow: hidden;
+            overflow-y: hidden;
+        overflow-y: auto;
+        background-color: red;
+        cursor: default;
+        
+    }
+
+    &__overlay-menu {
+        height: 100vh;
+        // background-color: red;
     }
 }
 
