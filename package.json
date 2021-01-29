@@ -3,25 +3,31 @@
   "private": true,
   "description": "Akimarou web portfolio",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.0.2",
-    "browser-sync": "2.26.13",
-    "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-sass": "4.1.0",
-    "gulp-sourcemaps": "3.0.0",
-    "postcss": "8.1.7",
-    "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "^2.26.14",
+    "del": "^5.1.0",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.4.3",
+    "stylelint": "10.1.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "build": "gulp css",
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
@@ -34,9 +40,10 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "14.15.0"
-  }
+  },
+  "dependencies": {}
 }
