@@ -1,14 +1,7 @@
 .header {
     @include reset;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    transition: all 225ms cubic-bezier(0, 0, 0.2, 1);
-
-    background-color: white;
+    // background-color: white;
     position: relative;
 
 
@@ -16,10 +9,17 @@
     font-size: 18px;
     line-height: 40px;
 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
+
+    // background-color: yellow;
+
+    &__logo-container {
+        background-color: white;
+        padding: 10px 40px;
+        position: fixed;
+        z-index: 112;
+        width: 100%;
+    }
 
     &__logo {
         @include reset;
