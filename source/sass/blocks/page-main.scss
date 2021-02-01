@@ -1,6 +1,6 @@
 .page-main {
     @include reset;
-    background-color: white;
+    background-color: $page-background;
     padding-top: 100px;
 
     &__title {

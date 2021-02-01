@@ -1,6 +1,6 @@
 .footer {
     @include reset;
-    background-color: white;
+    background-color: $page-background;
     position: relative;
 
     color: $dark-title;
