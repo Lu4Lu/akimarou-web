@@ -18,9 +18,19 @@
 
 @font-face { 
   font-family: "Obviously"; 
+    src: local("Obviously Semi"),
+      // url("../fonts/obviouslyregular.woff2") format("woff2"),
+      url("../fonts/obviouslysemi.woff") format("woff");
+  font-style: medium;
+  font-weight: 600; 
+}
+
+@font-face { 
+  font-family: "Obviously"; 
     src: local("Obviously Bold"),
       // url("../fonts/obviouslyregular.woff2") format("woff2"),
       url("../fonts/obviouslybold.woff") format("woff");
   font-style: bold; 
   font-weight: 800; 
 }
+

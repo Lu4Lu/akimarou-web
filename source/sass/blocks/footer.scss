@@ -1,21 +1,103 @@
 .footer {
-    @include reset;
-    background-color: $page-background;
-    position: relative;
 
-    color: $dark-title;
-    font-size: 16px;
-    text-align: left;   
-    padding-bottom: 20px;
+    &__container {
+        background-color: $page-background;
+        color: $dark-title;
+    }
 
     &__copy {
         @include reset;
+        padding-top: 80px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__title {
+        @include reset;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__email {
+        @include reset;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__socials {
+        a {
+            display: block;
+            @include reset-link;
+            margin-bottom: 10px;    
+        }
+    }
+}
+
+@media (min-width: $tablet-width-container) {
+    .footer {
+        &__container {
+        }
+
+        &__contacts {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+        }
+
+        &__title {
+            grid-column: 1 / 9;
+            // text-align: right;
+        }
+
+        &__email {
+            grid-column: span 4;
+
+            a {
+                display: block;
+                padding-bottom: 5px;
+            }
+        }
+
+        &__socials {
+            grid-column: 9 / -1;
+        }
+
 
     }
 }
 
-@media (min-width: $desktop-1600-width-container) {
+@media (min-width: $desktop-width-container) {
     .footer {
-        max-width: 1600px;
+        &__container {
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        &__contacts {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+        }
+
+        &__title {
+            grid-column: span 4;
+            text-align: left;
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        &__email {
+            grid-column: span 4;
+
+            a {
+                display: block;
+                padding-bottom: 5px;
+            }
+        }
+
+        &__socials {
+            grid-column: 9 / -1;
+        }
     }
 }
